@@ -82,7 +82,7 @@ public class _03_EtsyTest extends Base{
                 "Gifts & Gift Cards"};
 
         for (int i = 0; i < 9; i++) {
-            Assert.assertEquals(etsySearchPage.mainHeaderLinks.get(i).getText(), expectedTexts[i]);
+            Assert.assertEquals(etsySearchPage.mainHeaderLinks.get(i).getText(), expectedTexts[i], "The actual and expected do not match");
         }
     }
 }
