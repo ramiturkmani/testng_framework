@@ -59,4 +59,42 @@ public class _07_DropdownTest extends Base{
         Waiter.waitUntilTextToBePresentInElement(driver,60, faceBookPage.errorMessage, expectedMessage);
         Assert.assertEquals(faceBookPage.errorMessage.getText(), expectedMessage, "Error message has issues!!!");
     }
+
+    /*
+    Go to https://www.expedia.com
+    Select "Flights" from "More travel" dropdown
+    Select "Premium economy" from "Economy" dropdown
+    Validate "Premium economy" is selected
+     */
+
+    @Test(priority = 2, description = "TC578: Validate Expedia dropdowns")
+    public void testExpediaDropdowns(){
+        driver.get("https://www.expedia.com/");
+
+        expediaPage.moreTravelDropdown.click();
+        expediaPage.flights.click();
+
+        //Manual captcha solution
+        //Waiter.pause(45);
+        expediaPage.flightTypesDropdown.click();
+
+        expediaPage.flightOptions.get(1).click();
+
+        Assert.assertEquals(expediaPage.flightTypesDropdown.getText(), "Premium economy");
+    }
+
+    /*
+    Go to https://www.ebay.com/
+    Select "Art" from "All Categories" dropdown
+    Click on "Search" button
+    Validate "Welcome to eBay Art" heading1
+    Validate "Find Prints, Paintings, Posters, and More." heading2
+
+    NOTE: Validation includes headings to be displayed and texts to be exactly matching above texts
+     */
+
+    @Test(priority = 3, description = "TC242: Validate Ebay dropdown")
+    public void testEbayDropdown(){
+
+    }
 }
