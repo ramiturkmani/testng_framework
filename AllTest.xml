@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" name="All Test">
+        <classes>
+            <class name="scripts._01_AppleTest">
+                <methods>
+                    <include name="testAppleTitle"/>
+                    <include name="testAppleURL"/>
+                </methods>
+            </class>
+            <class name="scripts._02_TechGlobalTest">
+                <methods>
+                    <include name="testApplicationFormHeading"/>
+                </methods>
+            </class>
+            <class name="scripts._03_EtsyTest">
+                <methods>
+                    <include name="testEtsyLogo"/>
+                    <include name="testEtsySearch"/>
+                    <include name="testEtsySearchResult"/>
+                    <include name="testMainHeader"/>
+                </methods>
+            </class>
+            <class name="scripts._04_GoogleTest">
+                <methods>
+                    <include name="testGoogleSearch"/>
+                    <include name="testGoogleStoreLink"/>
+                </methods>
+            </class>
+            <class name="scripts._05_CheckBoxTest">
+                <methods>
+                    <include name="testCheckBoxInHeroApp"/>
+                </methods>
+            </class>
+            <class name="scripts._06_RadioButtonTest">
+                <methods>
+                    <include name="testFacebookGenderRadioButtons"/>
+                </methods>
+            </class>
+            <class name="scripts._07_DropdownTest">
+                <methods>
+                    <include name="testUnsecurePasswordErrorMessage"/>
+                    <include name="testExpediaDropdowns"/>
+                    <include name="testEbayDropdown"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
