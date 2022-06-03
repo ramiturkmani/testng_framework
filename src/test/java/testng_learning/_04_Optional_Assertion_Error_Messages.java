@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class _04_Optional_Assertion_Error_Messages {
 
-    /*
+
     @Test
     public void method1(){
         //TestNG way
@@ -14,8 +14,8 @@ public class _04_Optional_Assertion_Error_Messages {
 
         //JUnit way
         Assert.assertTrue("message", false);
-        Assert.assertEquals("actual", "expected", "message");
+        Assert.assertEquals("message", "expected", "actual");
     }
-     */
+
 
 }
