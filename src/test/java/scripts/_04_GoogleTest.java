@@ -15,7 +15,8 @@ public class _04_GoogleTest extends Base{
 
         String results = googleSearchResultPage.resultTag.getText();
 
-        Assert.assertTrue(Long.parseLong(results.substring(results.indexOf(" "),results.indexOf("results")-1).replaceAll("[^\\d]","")) > 0);
+//        Assert.assertTrue(Long.parseLong(results.substring(results.indexOf(" "),results.indexOf("results")-1).replaceAll("[^\\d]","")) > 0);
+        Assert.assertTrue(Long.parseLong(results.substring(results.indexOf(" "),results.lastIndexOf(" ")).replaceAll("[^\\d]","")) > 0);
     }
 
     /*
