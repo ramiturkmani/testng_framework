@@ -13,7 +13,6 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class Base {
-
     WebDriver driver;
     WebDriverWait explicitWait;
     Wait fluentWait;
@@ -25,6 +24,8 @@ public class Base {
     HeroAppPage heroAppPage;
     FaceBookPage faceBookPage;
     ExpediaPage expediaPage;
+    RediffHomePage rediffHomePage;
+    AmazonHomePage amazonHomePage;
 
     @BeforeMethod
     public void setup(){
@@ -39,10 +40,13 @@ public class Base {
         heroAppPage = new HeroAppPage(driver);
         faceBookPage = new FaceBookPage(driver);
         expediaPage = new ExpediaPage(driver);
+        rediffHomePage = new RediffHomePage(driver);
+        amazonHomePage = new AmazonHomePage(driver);
     }
 
     @AfterMethod
     public void teardown(){
+        //TODO if there is a failure, take screenshot and attach it to the report
         softAssert.assertAll();
         Driver.quitDriver();
     }

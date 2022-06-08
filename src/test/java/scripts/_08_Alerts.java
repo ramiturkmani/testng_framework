@@ -4,7 +4,6 @@ package scripts;
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.HeroAppPage;
 import utilities.AlertHandler;
 
 public class _08_Alerts extends Base{
