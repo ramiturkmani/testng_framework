@@ -1,19 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 70.043 sec <<< FAILURE! - in TestSuite
-testMainHeader(scripts._03_EtsyTest)  Time elapsed: 2.814 sec  <<< FAILURE!
-java.lang.AssertionError: The actual and expected do not match expected [Father's Day Gifts] but found [Shop Home Sales!]
-	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:85)
-
-testExpediaDropdowns(scripts._07_DropdownTest)  Time elapsed: 42.245 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=101.0.4951.64)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Ramis-MacBook-Pro.local', ip: 'fe80:0:0:0:468:135a:2080:6030%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/__/q6bhzn9s4cj...}, goog:chromeOptions: {debuggerAddress: localhost:62064}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dae052a58d926ff086f2f06fd7b66b2c
-	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:75)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.437 sec - in TestSuite

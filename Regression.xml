@@ -21,6 +21,11 @@
             <class name="scripts._05_CheckBoxTest"/>
             <class name="scripts._06_RadioButtonTest"/>
             <class name="scripts._07_DropdownTest"/>
+            <class name="scripts._08_Alerts"/>
+            <class name="scripts._09_iFrames"/>
+            <class name="scripts._10_WindowHandles"/>
+            <class name="scripts._11_FileUpload"/>
+            <class name="scripts._12_Actions_Class"/>
         </classes>
     </test>
 </suite>

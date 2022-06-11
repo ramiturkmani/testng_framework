@@ -3,7 +3,6 @@ package scripts;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.FaceBookPage;
 
 public class _06_RadioButtonTest extends Base{
     /*

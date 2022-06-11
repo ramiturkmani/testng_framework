@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="70.043" tests="8" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="17.437" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1+0"/>
@@ -40,7 +40,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -PRegression"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean -PSmoke test"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -61,41 +61,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testAppleURL" classname="scripts._01_AppleTest" time="1.31"/>
-  <testcase name="testMainHeader" classname="scripts._03_EtsyTest" time="2.814">
-    <failure message="The actual and expected do not match expected [Father&apos;s Day Gifts] but found [Shop Home Sales!]" type="java.lang.AssertionError">java.lang.AssertionError: The actual and expected do not match expected [Father's Day Gifts] but found [Shop Home Sales!]
-	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:85)
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 3298
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 29, 2022 3:39:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="testGoogleStoreLink" classname="scripts._04_GoogleTest" time="4.163"/>
-  <testcase name="testCheckBoxInHeroApp" classname="scripts._05_CheckBoxTest" time="6.076"/>
-  <testcase name="testFacebookGenderRadioButtons" classname="scripts._06_RadioButtonTest" time="1.55"/>
-  <testcase name="testUnsecurePasswordErrorMessage" classname="scripts._07_DropdownTest" time="3.806"/>
-  <testcase name="testExpediaDropdowns" classname="scripts._07_DropdownTest" time="42.245">
-    <failure message="element not interactable&#10;  (Session info: chrome=101.0.4951.64)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Ramis-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:468:135a:2080:6030%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/__/q6bhzn9s4cj...}, goog:chromeOptions: {debuggerAddress: localhost:62064}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dae052a58d926ff086f2f06fd7b66b2c" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=101.0.4951.64)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Ramis-MacBook-Pro.local', ip: 'fe80:0:0:0:468:135a:2080:6030%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/__/q6bhzn9s4cj...}, goog:chromeOptions: {debuggerAddress: localhost:62064}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dae052a58d926ff086f2f06fd7b66b2c
-	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:75)
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 23762
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 29, 2022 3:39:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="testEbayDropdown" classname="scripts._07_DropdownTest" time="0"/>
+  <testcase name="testAppleTitle" classname="scripts._01_AppleTest" time="0.75"/>
+  <testcase name="testApplicationFormHeading" classname="scripts._02_TechGlobalTest" time="1.013"/>
+  <testcase name="testGoogleSearch" classname="scripts._04_GoogleTest" time="2.167"/>
+  <testcase name="testEtsyLogo" classname="scripts._03_EtsyTest" time="1.669"/>
+  <testcase name="testEtsySearch" classname="scripts._03_EtsyTest" time="1.78"/>
+  <testcase name="testEtsySearchResult" classname="scripts._03_EtsyTest" time="3.252"/>
 </testsuite>
