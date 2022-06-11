@@ -35,8 +35,8 @@ public class _09_iFrames extends Base{
         Assert.assertEquals(heroAppPage.contentBox.getText(), "Hello World");
 
         //Switch back to parent html - outer
-        //driver.switchTo().parentFrame(); -> goes up 1 iFrame level
-        driver.switchTo().defaultContent(); //goes out to the outermost iFrame
+        //driver.switchTo().parentFrame(); -> goes back 1 frame level
+        driver.switchTo().defaultContent(); //goes out to the outermost frame
         Assert.assertEquals(heroAppPage.iFrameHeading3.getText(), "An iFrame containing the TinyMCE WYSIWYG Editor");
     }
 

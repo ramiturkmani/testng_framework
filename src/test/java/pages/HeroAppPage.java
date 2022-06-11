@@ -36,6 +36,30 @@ public class HeroAppPage {
     @FindBy(id = "mce_0_ifr")
     public WebElement innerIFrame;
 
+    @FindBy(css = ".example a")
+    public WebElement clickHereLink;
+
+    @FindBy(css = "#content h3")
+    public WebElement windowH3;
+
+    @FindBy(xpath = "//h3")
+    public WebElement newWindowH3;
+
+    @FindBy(id = "file-upload")
+    public WebElement chooseFileInputBox;
+
+    @FindBy(id = "file-submit")
+    public WebElement uploadFileButton;
+
+    @FindBy(css = ".example h3")
+    public WebElement fileUploadedH3;
+
+    @FindBy(id = "uploaded-files")
+    public WebElement uploadedFileText;
+
+    @FindBy(linkText = "myFileRami.txt")
+    public WebElement downloadFileLink;
+
     public void clickOnLink(String linkText){
         for (WebElement link : links) {
             if (link.getText().equals(linkText)){
