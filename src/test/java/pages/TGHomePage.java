@@ -14,6 +14,5 @@ public class TGHomePage {
     public WebElement faceBookIcon;
 
     @FindBy(css = "#comp-kvjohd5t5 a")
-    public WebElement introSessionButton;
-
+    public WebElement registerForIntroLink;
 }

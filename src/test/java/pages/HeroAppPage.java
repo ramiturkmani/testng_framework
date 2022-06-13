@@ -60,6 +60,9 @@ public class HeroAppPage {
     @FindBy(linkText = "myFileRami.txt")
     public WebElement downloadFileLink;
 
+    @FindBy(css = "#table1 th")
+    public List<WebElement> headers;
+
     public void clickOnLink(String linkText){
         for (WebElement link : links) {
             if (link.getText().equals(linkText)){

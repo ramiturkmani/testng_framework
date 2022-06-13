@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import javax.xml.ws.WebEndpoint;
 import java.util.List;
 
 public class EtsySearchPage {
@@ -36,4 +37,7 @@ public class EtsySearchPage {
 
     @FindBy(id = "join-neu-overlay-title")
     public WebElement signInModalHeading;
+
+    @FindBy(css = "ul[data-node-id='10855']>li")
+    public List<WebElement> jewelryAndAccessoriesItems;
 }
