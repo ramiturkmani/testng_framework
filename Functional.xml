@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional Test">
+    <test verbose="2" preserve-order="true" name="Functional">
+        <groups>
+            <run>
+                <include name="Functional"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="scripts"/>
+            <package name="testng_learning"/>
+        </packages>
+    </test>
+</suite>

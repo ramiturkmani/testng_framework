@@ -8,7 +8,7 @@ import utilities.AlertHandler;
 
 public class _08_Alerts extends Base{
 
-    @Test(priority = 1, description = "TASK-1")
+    @Test(priority = 1, description = "TASK-1", groups = "Login")
     public void testEtsySignInModal(){
         driver.get("https://etsy.com/");
 

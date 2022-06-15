@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Purchase Test">
+    <test verbose="2" preserve-order="true" name="Purchase">
+        <groups>
+            <run>
+                <include name="Purchase"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testng_learning._05_Groups"/>
+        </classes>
+    </test>
+</suite>
