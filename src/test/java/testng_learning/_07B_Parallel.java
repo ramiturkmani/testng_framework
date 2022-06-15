@@ -5,6 +5,7 @@ import utilities.Waiter;
 
 public class _07B_Parallel {
 
+    /*
     @Test(priority = 1)
     public void testB1(){
         Waiter.pause(10);
@@ -25,4 +26,5 @@ public class _07B_Parallel {
         System.out.println("This is test B3");
         System.out.println("Thread id = " + Thread.currentThread().getId());
     }
+     */
 }

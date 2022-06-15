@@ -10,6 +10,7 @@ public class _05_Groups {
     Functional -> 5
      */
 
+    /*
     @Test(priority = 1, groups = "Login")
     public void test1(){
         System.out.println("This is test1");
@@ -34,4 +35,5 @@ public class _05_Groups {
     public void test5(){
         System.out.println("This is test5");
     }
+    */
 }

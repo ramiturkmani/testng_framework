@@ -7,7 +7,7 @@ import utilities.TestData;
 
 public class _06_Parameters {
 
-
+    /*
     @Test
     public void login1(){
         System.out.println("Username comes from properties = " + ConfigReader.getProperty("username"));
@@ -26,4 +26,5 @@ public class _06_Parameters {
         System.out.println("Username comes from TestData = " + TestData.username);
         System.out.println("Password comes from TestData = " + TestData.password);
     }
+     */
 }
